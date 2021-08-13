@@ -223,6 +223,7 @@ change_mode.addEventListener('click',function(){
         setTimeout(function(){
             document.getElementsByClassName('post-container')[0].style.backgroundColor = "#0b1111";
         },900);
+        // document.getElementsByTagName('body')[0].style.backgroundColor = "rgb(11, 17, 17)";
         this.innerText = "Switch to Light Mode";
         mode = "dark";
     }
@@ -232,6 +233,7 @@ change_mode.addEventListener('click',function(){
         setTimeout(function(){
             document.getElementsByClassName('post-container')[0].style.backgroundColor = "#fff";
         },900);
+        // document.getElementsByTagName('body')[0].style.backgroundColor = "rgb(250, 250, 250)";
         this.innerText = "Switch to Dark Mode";
         mode = "light";
     }
