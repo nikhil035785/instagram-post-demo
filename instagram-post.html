@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=0"/>
+    <title>Instagram Post Demo</title>
+    <!-- Basic Demo Project by Nikhil Jadhav -->
+    <link rel="shortcut icon" href="img/insta-logo.png" type="image/x-icon">  
+    <link rel="stylesheet" href="css/instagram.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <section class="section">
+        <!-- <center><h2 style="color: aliceblue;">Instagram Post</h2></center> -->
+        <div class="post-container">
+            <div class="post-top">
+                <div class="logo-name">
+                    <img src="img/deepak-user.jpg" alt="" class="post-user">
+                    <h5><b>humonoid_01</b></h5>
+                </div>
+                <div class="menu">
+                    <span class="material-icons-outlined material-icons" id="menubtn">more_vert</span>
+                </div>
+            </div>
+            <div class="post-body" style="position: relative;">
+                <img src="img/post.jpg" alt="" class="user-post" id="photo">
+                <!-- <div class="big_like"> -->
+                <center><span class="material-icons-outlined material-icons" id="biglikebtn">favorite</span></center>
+                <!-- </div> -->
+                <div class="post-saved" id="post-saved">
+                    <div class="img-body">
+                        <img src="img/post.jpg" alt="" class="post-user-img">
+                        <h5>Saved</h5>
+                    </div>
+                    
+                    <h5>Save to collection</h5>
+                </div>
+            </div>
+            <div class="post-bottom">
+                <div class="user-reaction">
+                    <div class="user-reaction-left">
+                        <div class="icon_btn"><span class="material-icons-outlined material-icons" id="likebtn">favorite_border</span></div>
+                        <div class="icon_btn"><span class="material-icons-outlined material-icons" id="commentbtn">chat_bubble_outline</span></div>
+                        <div class="icon_btn"><span class="material-icons-outlined material-icons" id="send">send</span></div>
+                    </div>
+                    <div class="save-post">
+                        <span class="material-icons-outlined material-icons" id="bookmark">bookmark_border</span>
+                    </div>
+                    
+                </div>
+                <div class="likes">
+                    <div class="imges">
+                        <img src="img/deepak-user.jpg" alt="" class="post-user2">
+                    </div> 
+                    <div class="total-likes">
+                        Liked by <b>PMO</b> and <b id="likes">419</b> others
+                    </div>
+                </div>
+                <div class="comments">
+                    <div class="comment-page-title" style="display: none;">
+                        <div class="back-btn" id="backbtn">
+                            <span class="material-icons-rounded material-icons">
+                                arrow_back
+                            </span>
+                        </div>
+                        <div class="comment-title">
+                            <h4>Comments</h4>
+                        </div>
+                    </div>
+                    <p><b>humonoid_01 </b> How is this Photo?</p><br>
+                    <div class="comments_section" id="comments_section">
+                    </div>
+                    <span class="more" id="more_less_comments"><span id="moreLessCom">View</span> all <span id="totalComments">2</span> comments</span>
+                </div>
+                <div class="add-comment">
+                    <div class="user-comment-photo">
+                        <img src="img/deepak-user.jpg" alt="" class="post-user">
+                    </div>
+                    <div class="comment-input">
+                        <input type="text" id="addCommentInput" placeholder="Comment as humonoid_01.." value="">
+                    </div>
+                    <div class="add_comment"><button class="add_btn" id="addBtn"><span>Post</span></button></div>
+                </div>
+            </div>
+            <div class="dark-bg" style="display: none;"></div>
+            <div class="post-menu" id="menu_box" style="display:none">
+                <div class="post-border"></div>
+                <div class="menus">
+                    <ul class="menu-list">
+                        <li><a href="#!">Report...</a></li>
+                        <li><a href="#!">Hide</a></li>
+                        <li><a href="#!" id="copylink">Copy Link</a></li>
+                        <li><a href="#!">Share to...</a></li>
+                        <li><a href="#!" id="changeMode" class="light">Switch to Dark Mode</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dark-bg" style="display: none;"></div>
+            <div class="send-to" id="send_to" style="display: none;">
+                <div class="post-border"></div>
+                <div class="img-msg-box">
+                    <div class="post-img"><img src="img/post.jpg" alt="" class="post-user-img"></div>
+                    <div class="add-msg"><input type="text" name="" id="msgid" class="msg-box" placeholder="Add a message..."></div>
+                </div>
+                <div class="search-bar">
+                    <div class="search">
+                        <div class="search-icon"><span class="material-icons-round material-icons">
+                            search
+                            </span></div>
+                        <div class="seatch-input-div">
+                            <input type="text" name="" placeholder="Search" id="searchInput">
+                        </div>
+                    </div>
+                </div>
+                <div class="friend-list">
+                    <ul class="friends">
+                        <li class="friend">
+                            <div class="friend-box">
+                                <div class="friend-img"><img src="img/user_1.jpg" alt="" class="img-frnd"></div>
+                                <div class="friends-names">
+                                    <p class="profile-name"><b>Lorem</b></p>
+                                    <p class="id-name">Lorem_01</p>
+                                </div>
+                                <div class="send-friend"><input type="button" value="Send" class="send-to-frnd"></div>
+                            </div>
+                        </li>
+                        <li class="friend">
+                            <div class="friend-box">
+                                <div class="friend-img"><img src="img/user_2.jpg" alt="" class="img-frnd"></div>
+                                <div class="friends-names">
+                                    <p class="profile-name"><b>ipsum</b></p>
+                                    <p class="id-name">ipsum_08</p>
+                                </div>
+                                <div class="send-friend"><input type="button" value="Send" class="send-to-frnd"></div>
+                            </div>
+                        </li>
+                        <li class="friend">
+                            <div class="friend-box">
+                                <div class="friend-img"><img src="img/user_1.jpg" alt="" class="img-frnd"></div>
+                                <div class="friends-names">
+                                    <p class="profile-name"><b>dolor</b></p>
+                                    <p class="id-name">dolor_07</p>
+                                </div>
+                                <div class="send-friend"><input type="button" value="Send" class="send-to-frnd"></div>
+                            </div>
+                        </li>
+                        <li class="friend">
+                            <div class="friend-box">
+                                <div class="friend-img"><img src="img/user_2.jpg" alt="" class="img-frnd"></div>
+                                <div class="friends-names">
+                                    <p class="profile-name"><b>consectetur</b></p>
+                                    <p class="id-name">consectetur_06</p>
+                                </div>
+                                <div class="send-friend"><input type="button" value="Send" class="send-to-frnd"></div>
+                            </div>
+                        </li>
+                        <li class="friend">
+                            <div class="friend-box">
+                                <div class="friend-img"><img src="img/user_1.jpg" alt="" class="img-frnd"></div>
+                                <div class="friends-names">
+                                    <p class="profile-name"><b>adipisicing</b></p>
+                                    <p class="id-name">adipisicing_05</p>
+                                </div>
+                                <div class="send-friend"><input type="button" value="Send" class="send-to-frnd"></div>
+                            </div>
+                        </li>
+                        <li class="friend">
+                            <div class="friend-box">
+                                <div class="friend-img"><img src="img/user_2.jpg" alt="" class="img-frnd"></div>
+                                <div class="friends-names">
+                                    <p class="profile-name"><b>Dolorum</b></p>
+                                    <p class="id-name">Dolorum_04</p>
+                                </div>
+                                <div class="send-friend"><input type="button" value="Send" class="send-to-frnd"></div>
+                            </div>
+                        </li>
+                        <li class="friend">
+                            <div class="friend-box">
+                                <div class="friend-img"><img src="img/user_1.jpg" alt="" class="img-frnd"></div>
+                                <div class="friends-names">
+                                    <p class="profile-name"><b>consequatur</b></p>
+                                    <p class="id-name">consequatur_03</p>
+                                </div>
+                                <div class="send-friend"><input type="button" value="Send" class="send-to-frnd"></div>
+                            </div>
+                        </li>
+                        <li class="friend">
+                            <div class="friend-box">
+                                <div class="friend-img"><img src="img/user_2.jpg" alt="" class="img-frnd"></div>
+                                <div class="friends-names">
+                                    <p class="profile-name"><b>soluta</b></p>
+                                    <p class="id-name">soluta_02</p>
+                                </div>
+                                <div class="send-friend"><input type="button" value="Send" class="send-to-frnd"></div>
+                            </div>
+                        </li>
+                        <li class="friend">
+                            <div class="friend-box">
+                                <div class="friend-img"><img src="img/user_1.jpg" alt="" class="img-frnd"></div>
+                                <div class="friends-names">
+                                    <p class="profile-name"><b>minima</b></p>
+                                    <p class="id-name">minima_01</p>
+                                </div>
+                                <div class="send-friend"><input type="button" value="Send" class="send-to-frnd"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="done-box" id="done-box" style="display: none;">
+                    <input type="button" value="Done" class="done-btn" id="donebtn">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/instagram-post.js"></script>
+</body>
+</html>
