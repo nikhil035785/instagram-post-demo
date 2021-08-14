@@ -43,6 +43,7 @@ body{
 }
 
 .post-container{
+    position: relative;
     width:300px;
     height: auto;
     display: flex;
